@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors and combinators in css</title>
+    <style>
+
+
+        /* example of element selector */
+        h1{
+            color:white;
+        }
+
+        /* example of id selector */
+        /* #para1{
+            color:white;
+        } */
+	
+        /* example of class selector */
+        /* .para1{
+            color:white;
+        } */
+
+
+        /* example of combination selector */
+        /* h1, h2,h3, p {
+                    color:white;
+        } */
+        
+
+        /* descendant selectors selects all the descendants*/
+		/* div  p{
+			
+				color:green;
+			
+		} */
+		
+
+         /*child selectors select all the childs but not descendants*/
+		/* div > p{
+		
+			color:green;
+		
+		} */
+		
+
+        /*adjacent sibling selectors select immediate following elements*/
+		/* div + p{
+		
+			color:green;
+		
+		} */
+
+         /*general sibling selectors select all the following elements*/
+		/* div ~ p{
+		
+			color:green;
+		
+		} */
+		
+		
+		
+	</style>
+	
+</head>
+	
+	<body>
+	
+		<h1> This is a h1 </h1>
+		
+		<div>
+			<p > This is a paragraph 1</p>
+			<p > This is a paragraph 2</p>
+			<section> <p> This is a para3</p> </section>
+		</div>
+		<p> This is a paragraph 4</p>
+		<p> This is a paragraph 5</p>
+	
+	
+
+</body>
+</html>

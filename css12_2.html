@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+
+    <!-- google icons -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+
+    <style>
+        input[type=text]{
+            width: 100%;
+            box-sizing: border-box;           
+            margin: 10px 0;
+
+            /* colored inputs */
+            background-color: indianred;
+            color: white;
+
+            /* bordered inputs */
+            padding: 10px 20px;
+
+
+            /* bordered inputs */
+            border: 3px solid brown;
+            border-radius: 5px;
+
+            /* for bottom border only */
+            /* border: none;
+            border-bottom: 3px solid green; */
+
+            
+        }
+
+        #search{
+            /* Input with icon/image */
+            background-image: url("images/search.png");
+            background-repeat: no-repeat;
+            background-position: 5px 8px; /* x axis and y axis */
+            font-size: 1rem;
+            background-color: white;
+            padding: 15px 40px;
+            width: 150px;
+
+            /*Animated Search Input*/
+            transition: width 0.4s ease-in-out;
+        }
+
+      
+
+        #search:focus {
+            width: 100%;
+        }
+
+
+        /* focused inputs */
+        input[type=text]:focus {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    
+
+   
+    <input type="text" id="search" name="search" placeholder="Search">
+
+    <p></p>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" >
+
+    <!-- <span class="material-icons">
+        search
+    </span> -->
+
+</body>
+</html>

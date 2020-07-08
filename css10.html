@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+
+    <style>
+
+        table{
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td, th{
+            
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 8px;
+        }
+        th{
+            height: 30px;
+            background-color: darkgreen;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color:gray;
+        }
+
+        tr:nth-child(odd) {
+            background-color: gold;
+        }
+
+        tr:hover{
+            background-color: chocolate;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <div style="overflow-x:auto;">
+
+        <table id="my-table">
+            <caption>student details</caption> <!--To add a caption to a table, use the <caption> tag:-->
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>GPA</th>
+                <th>Bio</th>
+                <th>Phone</th>
+                
+            </tr>
+    
+            <tr>
+                <td>101</td>
+                <td>Anisul Islam</td>
+                <td>3.5</td>
+                <td>Aliquyam amet et erat magna lorem labore, justo rebum voluptua amet diam sit dolor sit. Elitr ipsum sit consetetur justo.</td>
+                <td>01710444700</td>
+              </tr>
+              <tr>
+                <td>102</td>
+                <td>Rabeya</td>
+                <td>4</td>
+                <td>Kasd tempor sit dolor sed accusam sadipscing et dolor, erat vero sadipscing accusam takimata kasd rebum, eirmod et sea magna kasd elitr sed eos, gubergren voluptua et dolor erat. Clita voluptua ipsum ea elitr aliquyam dolor, nonumy labore dolor et.</td>
+                <td>01710444700</td>
+            </tr>
+    
+              <tr>
+                <td>103</td>
+                <td>Linkon</td>
+                <td>4</td>
+                <td>Kasd tempor sit dolor sed accusam sadipscing et dolor, erat vero sadipscing accusam takimata kasd rebum, eirmod et sea magna kasd elitr sed eos, gubergren voluptua et dolor erat. Clita voluptua ipsum ea elitr aliquyam dolor, nonumy labore dolor et.</td>
+                <td>01710444700</td>
+              </tr>
+    
+              <tr>
+                <td>104</td>
+                <td>Affani</td>
+                <td>4.5</td>
+                <td>Kasd tempor sit dolor sed accusam sadipscing et dolor, erat vero sadipscing accusam takimata kasd rebum, eirmod et sea magna kasd elitr sed eos, gubergren voluptua et dolor erat. Clita voluptua ipsum ea elitr aliquyam dolor, nonumy labore dolor et.</td>
+                <td>01710444700</td>
+              </tr>
+    
+              <tr>
+                <td>105</td>
+                <td>Robi</td>
+                <td>3.5</td>
+                <td>Kasd tempor sit dolor sed accusam sadipscing et dolor, erat vero sadipscing accusam takimata kasd rebum, eirmod et sea magna kasd elitr sed eos, gubergren voluptua et dolor erat. Clita voluptua ipsum ea elitr aliquyam dolor, nonumy labore dolor et.</td>
+                <td>01710444700</td>
+              </tr>
+    
+        </table>
+    </div>
+   
+</body>
+</html>

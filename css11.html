@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+
+    <style>
+
+        /* always stays in the same place even if the page is scrolled. */
+        #nav-div{
+            border: 5px solid red;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        /* it helps to position element according to the normal flow of the page */
+        #div1{
+            border: 5px solid tomato;
+            padding: 5px;
+            width: 600px;
+            position: static;
+            left: 50px;
+        }
+
+
+       /* the position of the elements are relative to its normal position. */
+        #div2{
+            border: 5px solid green;
+            padding: 5px;
+            width: 600px;
+            position: relative;
+            left: 50px;
+        }
+
+        #div3{
+            border: 5px solid orange;
+            padding: 5px;
+            width: 600px;
+            height: 300px;
+            position: relative;
+            
+        }
+
+        #div4{
+            border: 5px solid orange;
+            padding: 5px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        types of position - static, relative, absolute, fixed. 
+        first set the position property then set the position of elemenet using top, bottom, left, right proprty 
+    -->
+
+    <div id="nav-div">
+        Home
+    </div>
+
+    <div id="div1">
+        <p>Lorem amet dolores nonumy sed consetetur justo. Sit et nonumy sed sed est, est voluptua amet ipsum lorem diam clita invidunt eos. Justo invidunt erat consetetur justo invidunt gubergren. Eirmod duo sea aliquyam invidunt dolor gubergren dolores dolores erat. Vero dolore et lorem stet lorem, nonumy sed no dolore clita.</p>
+    </div>
+
+    <br>
+
+  
+
+    <div id="div2">
+        <p>Lorem amet dolores nonumy sed consetetur justo. Sit et nonumy sed sed est, est voluptua amet ipsum lorem diam clita invidunt eos. Justo invidunt erat consetetur justo invidunt gubergren. Eirmod duo sea aliquyam invidunt dolor gubergren dolores dolores erat. Vero dolore et lorem stet lorem, nonumy sed no dolore clita.</p>
+    </div>
+
+    <p>Sanctus diam sed amet sed no. Voluptua sanctus aliquyam amet eirmod magna et labore nonumy. Rebum labore amet est kasd, ipsum kasd no et accusam elitr dolores, diam at dolore elitr aliquyam sit, lorem magna amet amet diam sit dolore ut dolore, amet magna est dolor nonumy ea ea, vero diam ut et amet sadipscing est. Sit ut lorem takimata erat dolor ea labore invidunt. No stet consetetur et eos ipsum. Voluptua gubergren et ea nonumy duo sea invidunt, sadipscing et lorem ea at vero ipsum rebum. Et dolor et est sed diam amet consetetur accusam. Lorem sed vero accusam et nonumy kasd duo clita ut, ut eos sanctus aliquyam sea stet gubergren est sed et. Rebum ut labore sed sed dolore vero est elitr, sit dolore sadipscing tempor voluptua justo accusam voluptua eirmod, vero lorem lorem invidunt eirmod sed amet, vero kasd sed lorem sit. Diam lorem sed ea et. Sit lorem amet et et. Amet lorem et no amet voluptua lorem amet voluptua, dolor et sed sed erat dolor sit ut diam elitr, et voluptua clita clita diam. Invidunt justo sanctus sit consetetur, sea ea duo et justo ea et invidunt. Sadipscing et accusam eos dolores kasd dolor eos sea. Stet lorem magna accusam takimata duo clita rebum ut sadipscing. Takimata labore elitr dolor sanctus at vero eos ut, sit amet stet sadipscing ea no. Takimata diam voluptua stet sit sea et amet stet. Takimata et magna et ut amet. Sit consetetur sit ut amet sit, sed at elitr tempor ipsum ipsum. Eirmod stet et dolores ipsum stet clita sanctus, sadipscing sed ipsum dolor lorem dolor rebum ipsum, dolore et kasd tempor sadipscing dolores, invidunt sadipscing eirmod dolore clita no sanctus sed, amet vero lorem labore dolores takimata magna. Sea voluptua amet et eos tempor amet amet et. Elitr sanctus dolores tempor gubergren justo ea gubergren kasd et. Takimata lorem est eirmod sea. Est tempor clita nonumy sadipscing aliquyam no, magna est gubergren justo vero tempor dolor, voluptua est rebum amet sit lorem est. Accusam amet amet clita duo. Aliquyam lorem ut tempor ipsum et tempor dolor, no ut et duo et, gubergren ipsum at amet magna, amet dolor diam clita ipsum sit eirmod labore nonumy, dolores dolor lorem amet est eirmod invidunt, dolor dolore et labore et eirmod sadipscing vero accusam invidunt. Dolores magna et est stet rebum labore ipsum ea stet, ut elitr elitr sanctus diam magna, vero elitr voluptua kasd labore sed nonumy elitr aliquyam. Est dolore aliquyam ea erat dolor gubergren. Dolor erat at dolores justo et. Diam lorem et dolores gubergren magna sanctus, accusam sed sea invidunt sed et kasd lorem, consetetur accusam at et gubergren ipsum sea eos. Sit amet takimata dolor dolores diam stet, labore diam eirmod sanctus sea sanctus sea ea stet lorem, stet et dolore rebum duo duo et dolor eos. Duo eirmod eos clita et sit magna. Eirmod sit rebum no aliquyam no ipsum ipsum takimata clita, nonumy lorem labore magna dolores. Et sea dolore ut sed sea.</p>
+
+    <p>Sanctus diam sed amet sed no. Voluptua sanctus aliquyam amet eirmod magna et labore nonumy. Rebum labore amet est kasd, ipsum kasd no et accusam elitr dolores, diam at dolore elitr aliquyam sit, lorem magna amet amet diam sit dolore ut dolore, amet magna est dolor nonumy ea ea, vero diam ut et amet sadipscing est. Sit ut lorem takimata erat dolor ea labore invidunt. No stet consetetur et eos ipsum. Voluptua gubergren et ea nonumy duo sea invidunt, sadipscing et lorem ea at vero ipsum rebum. Et dolor et est sed diam amet consetetur accusam. Lorem sed vero accusam et nonumy kasd duo clita ut, ut eos sanctus aliquyam sea stet gubergren est sed et. Rebum ut labore sed sed dolore vero est elitr, sit dolore sadipscing tempor voluptua justo accusam voluptua eirmod, vero lorem lorem invidunt eirmod sed amet, vero kasd sed lorem sit. Diam lorem sed ea et. Sit lorem amet et et. Amet lorem et no amet voluptua lorem amet voluptua, dolor et sed sed erat dolor sit ut diam elitr, et voluptua clita clita diam. Invidunt justo sanctus sit consetetur, sea ea duo et justo ea et invidunt. Sadipscing et accusam eos dolores kasd dolor eos sea. Stet lorem magna accusam takimata duo clita rebum ut sadipscing. Takimata labore elitr dolor sanctus at vero eos ut, sit amet stet sadipscing ea no. Takimata diam voluptua stet sit sea et amet stet. Takimata et magna et ut amet. Sit consetetur sit ut amet sit, sed at elitr tempor ipsum ipsum. Eirmod stet et dolores ipsum stet clita sanctus, sadipscing sed ipsum dolor lorem dolor rebum ipsum, dolore et kasd tempor sadipscing dolores, invidunt sadipscing eirmod dolore clita no sanctus sed, amet vero lorem labore dolores takimata magna. Sea voluptua amet et eos tempor amet amet et. Elitr sanctus dolores tempor gubergren justo ea gubergren kasd et. Takimata lorem est eirmod sea. Est tempor clita nonumy sadipscing aliquyam no, magna est gubergren justo vero tempor dolor, voluptua est rebum amet sit lorem est. Accusam amet amet clita duo. Aliquyam lorem ut tempor ipsum et tempor dolor, no ut et duo et, gubergren ipsum at amet magna, amet dolor diam clita ipsum sit eirmod labore nonumy, dolores dolor lorem amet est eirmod invidunt, dolor dolore et labore et eirmod sadipscing vero accusam invidunt. Dolores magna et est stet rebum labore ipsum ea stet, ut elitr elitr sanctus diam magna, vero elitr voluptua kasd labore sed nonumy elitr aliquyam. Est dolore aliquyam ea erat dolor gubergren. Dolor erat at dolores justo et. Diam lorem et dolores gubergren magna sanctus, accusam sed sea invidunt sed et kasd lorem, consetetur accusam at et gubergren ipsum sea eos. Sit amet takimata dolor dolores diam stet, labore diam eirmod sanctus sea sanctus sea ea stet lorem, stet et dolore rebum duo duo et dolor eos. Duo eirmod eos clita et sit magna. Eirmod sit rebum no aliquyam no ipsum ipsum takimata clita, nonumy lorem labore magna dolores. Et sea dolore ut sed sea.</p>
+
+
+    <div id="div3">
+        <h1>Bangladesh</h1>
+
+        <div id="div4">
+            Clita invidunt amet ipsum eirmod diam. Sanctus accusam aliquyam erat no et vero lorem, sed eirmod dolore eirmod sadipscing nonumy.
+        </div>
+    </div>
+</body>
+</html>

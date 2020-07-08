@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+
+    <!-- by default all the html elements have z-indez 0 , -1 will take bottom, 1 will help to put on top-->
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1{
+            height: 200px;
+            background-color: purple;
+           
+        }
+
+        .div2{
+            height: 200px;
+            background-color: gray;
+            /* z-index: 1; */
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            margin-top: -20px;
+            margin-bottom: -20px;
+        }
+
+        .div3{
+            height: 200px;
+            background-color: purple;
+        }
+
+        .div4{
+            position: relative;
+        }
+
+        img{
+            z-index: -1; 
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+
+    <div class="div2">
+
+    </div>
+
+    <div class="div3">
+
+    </div>
+
+    <div class="div4">
+        <h1>Hello</h1>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/55/65/87/caption.jpg" alt="bangladesh">
+    </div>
+</body>
+</html>

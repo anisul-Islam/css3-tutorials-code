@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design using Grid View and Media queries</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+            
+        }
+
+        .aside{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+            text-align: center;
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            .nav-menu a{
+                text-align: center;
+                background-color: coral;
+                margin: 10px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Anisul Islam</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+    
+        <div class="main col-7">
+            <h1>I am a web designer</h1>
+            <p>Est vero labore eos lorem ipsum, vero diam eos justo accusam eirmod, sea erat invidunt gubergren amet, sea sed magna.</p>
+        
+            <p>Sit consetetur stet et no et. Lorem dolor dolore nonumy et sanctus dolore dolores at et. Et sanctus at clita dolor sit sadipscing. Sed rebum duo lorem consetetur sit clita et dolor est, rebum accusam no dolor aliquyam sadipscing stet, stet ea voluptua lorem sed justo amet ipsum, vero et dolor elitr stet sed ea dolor erat, stet tempor kasd et labore lorem. Kasd et eos takimata justo lorem elitr dolore, est nonumy diam sed dolor et sit nonumy aliquyam, diam diam tempor consetetur eos gubergren tempor ipsum sed dolor. Eirmod clita sit ut sanctus et sea sit tempor. Rebum aliquyam sadipscing gubergren eos amet sit duo gubergren, ut est aliquyam sed ut, magna vero eos sed amet. Sadipscing ea dolore aliquyam elitr voluptua diam justo sea, dolores vero diam invidunt elitr ut amet ea voluptua. Est at erat kasd ea, et et lorem sea ea justo labore amet. Ipsum est tempor diam lorem amet no gubergren. Diam clita tempor sit sit ea erat dolore. At voluptua accusam ipsum vero eirmod et. Ut lorem sea dolores magna at sit diam amet takimata, sed elitr dolores et diam. Et dolore ipsum sit voluptua voluptua erat amet. Et justo voluptua invidunt lorem.</p>
+       
+            <p>Sadipscing et lorem diam vero ea, at kasd dolor diam eos, amet vero duo tempor ea ipsum sed aliquyam sed. Lorem ea dolor diam justo clita vero duo amet, et clita dolore et labore stet duo sed, kasd rebum dolor magna et stet diam ipsum labore consetetur, et no elitr ipsum vero ipsum nonumy vero takimata. Amet sit lorem aliquyam dolore dolore. Duo ut rebum sit est diam et dolor. Nonumy amet sadipscing lorem ea sit. Erat erat et eos amet. Erat et sed sanctus vero labore amet ipsum accusam erat, ea dolor justo ipsum sanctus duo dolor takimata aliquyam. Eirmod sed ea dolor dolor sanctus, est sit ipsum sit sanctus, gubergren sit amet duo rebum. Amet justo erat sanctus sit, dolor consetetur magna diam sadipscing diam. Et sit accusam voluptua consetetur elitr, sanctus et tempor dolor ea lorem sit sadipscing, erat et et nonumy et sit labore invidunt. Consetetur erat at et tempor justo accusam sea erat et. Sea lorem dolor eirmod ut accusam ipsum, sea duo diam dolor amet. Magna ut ut eirmod aliquyam vero ipsum ipsum lorem. Sanctus et sed et stet, et accusam sed elitr elitr voluptua, ut tempor dolor duo lorem rebum kasd amet clita,.</p>
+            
+            
+        </div>
+    
+        <div class="aside col-3">
+            <h2>what I love?</h2>
+            <p>Justo lorem sit no sed lorem, amet et nonumy stet ut diam at gubergren. Dolore.</p>
+        
+            <h2>what I Do?</h2>
+            <p>Justo lorem sit no sed lorem, amet et nonumy stet ut diam at gubergren. Dolore.</p>
+        
+            <h2>what I don't love?</h2>
+            <p>Justo lorem sit no sed lorem, amet et nonumy stet ut diam at gubergren. Dolore.</p>
+       
+            <h2>what I don't Do?</h2>
+            <p>Justo lorem sit no sed lorem, amet et nonumy stet ut diam at gubergren. Dolore.</p>
+     
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; Study With Anis 2020. Developed By Anisul Islam
+    </div>
+
+</body>
+</html>

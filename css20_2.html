@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed header and footer setting</title>
+
+    <style>
+        .container{
+            min-height: 100vh;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .header{
+            position: fixed;
+            width: 100%;
+            background-color: gray;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .content-wrap{
+            position: absolute;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
+
+        .footer{
+            height: 3rem;
+            width: 100%;
+            background-color: gray;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            text-align: center;
+           
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>study with anis</h1>
+        </div>
+    
+       <div class="content-wrap">
+           <p>Menu, main, aside everything is here</p>
+       </div>
+    
+       <div class="footer">
+          <p>Footer is here</p>
+       </div>
+    </div>
+</body>
+</html> 

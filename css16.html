@@ -3,60 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Menu</title>
-
+    <title>Dropdown menu</title>
 
     <style>
 
-
-        .dropdown-container button{
-            background-color: #00643e;
-            color: white;
-            border: none;
-            padding: 10px;
-            font-size: 1.2rem;
-            border-radius: 5px;
-        
+        .navbar{
+            background-color: #40868b;
+            padding: 1% 7%;
+            text-align: center;
+            
         }
 
-        .dropdown-content{
-         
-            background-color: #f9f9f9;
-            min-width: 150px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+
+        .dropdown-content{           
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            background-color: #40868b ;
+            text-align: left;
+            min-width: 100px;
+            /* box-shadow: 5px 10px 5px black; */
             display: none;
         }
 
         .dropdown-content a{
-            text-decoration: none;
             display: block;
-            color: teal;
-            padding: 10px;
         }
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
+        .dropdown-content a:hover{
+            background-color: gray;
         }
 
         .dropdown-container:hover .dropdown-content{
-             display: block;
+            display: block;
         }
+        
 
-        .dropdown-container:hover button{
-            background-color: #3e8e41;
-        }
-
+        
     </style>
 </head>
 <body>
-    <div class="dropdown-container">
-        <button>Contact Me</button>
-
-        <div class="dropdown-content">
-            <a href="#">Facebook</a>
-            <a href="#">YouTube</a>
-            <a href="#">Email</a>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <div class="dropdown-container">
+            <a id="contact-me" href="#">Contact Me</a>
+            <div class="dropdown-content">
+                <a href="#">Email</a>
+                <hr>
+                <a href="#">Facebook</a>
+                <hr>
+                <a href="#">Linkedin</a>
+            </div>
         </div>
+        <a href="#">About Me</a>
+     
     </div>
+    
 </body>
 </html>

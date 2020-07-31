@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive columns using flex layout</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row{
+           display: flex;
+           flex-wrap: wrap;
+                     
+        }
+
+        .column{
+            flex: 25%;
+            padding: 10px;
+        }
+
+        
+
+     
+
+                /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (max-width: 768px) {
+            .column{
+            flex: 50%;
+            
+        }
+        }
+        @media only screen and (max-width: 600px) {
+           .row{
+               flex-direction: column;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Diam ipsum elitr diam ut labore sanctus amet est ut tempor, eirmod vero voluptua clita ea. Aliquyam et vero dolor.</p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>Diam ipsum elitr diam ut labore sanctus amet est ut tempor, eirmod vero voluptua clita ea. Aliquyam et vero dolor.</p>
+        </div>
+        <div class="column">
+            <h1>JS</h1>
+            <p>Diam ipsum elitr diam ut labore sanctus amet est ut tempor, eirmod vero voluptua clita ea. Aliquyam et vero dolor.</p>
+        </div>
+        <div class="column">
+            <h1>Python</h1>
+            <p>Diam ipsum elitr diam ut labore sanctus amet est ut tempor, eirmod vero voluptua clita ea. Aliquyam et vero dolor.</p>
+        </div>
+    </div>
+</body>
+</html>

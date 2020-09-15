@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .skill-container{
+            background-color: gray;
+            width: 500px;
+            padding: 20px;
+        }
+
+        .skill-container li{
+            list-style-type: none;
+            margin: 50px 0;
+            font-weight: bolder;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .skill-container li::before{
+
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+
+
+            background-color: rgb(170,167,173);
+            width: 100%;
+            height: 25px;
+            border-radius: 1000px;
+        }
+
+
+        .skill-container li::after{
+
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+
+
+            background-color: rgb(249,249,250);
+            width: 0;
+            height: 25px;
+            border-radius: 1000px;
+
+
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            /* animation-iteration-count: 3; */
+            /* animation-direction: forward; */
+            animation-fill-mode: forwards;
+        }
+
+        .skill-container li.html::after{
+            animation-name: html;
+        }
+
+        @keyframes html{
+            to{
+                width: 90%;
+                background-color: orange;
+            }
+        }
+
+        .skill-container li.css::after{
+            animation-name: css;
+        }
+
+        @keyframes css{
+            to{
+                width: 80%;
+                background-color: orangered;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="skill-container">
+        <ul>
+
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+            <li class="bs">Bootstrap</li>
+            <li class="java">Java</li>
+            <li class="cplus">C++</li>
+                
+        </ul>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List style</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <style>
+        .course-list{
+            background: rgb(216, 28, 28);
+            padding: 20px;
+           
+        }
+
+        .course-list ul{
+            list-style-type: none;
+        }
+
+        .course-list li{
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .course-list li::before{
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+
+            display: inline-block;
+            margin: 10px 5px;
+            font-size: 2rem;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="course-list">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>jQuery</li>
+        </ul>
+    </div>
+
+</body>
+</html>

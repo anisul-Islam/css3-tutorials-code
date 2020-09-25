@@ -3,56 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fixed header and footer setting</title>
+    <title>Document</title>
 
     <style>
-        .container{
-            min-height: 100vh;
-            border: 1px solid red;
-            position: relative;
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .header{
-            position: fixed;
-            width: 100%;
-            background-color: gray;
-            color: whitesmoke;
-            text-align: center;
-        }
-
-        .content-wrap{
-            position: absolute;
-            padding-top: 5rem;
-            padding-bottom: 3rem;
-        }
-
-        .footer{
-            height: 3rem;
-            width: 100%;
-            background-color: gray;
-            position: absolute;
-            bottom: 0;
-            color: white;
-            text-align: center;
+        body{
+            height: 100vh;
            
+            display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f'
+            ;
         }
 
-       
+        header{
+            grid-area: h;
+            background: pink;
+            width: 100%;
+            border: solid;
+        }
+        main{
+            background-color: chocolate;
+            grid-area: m;
+            width: 100%;
+            height: 100%;
+        }
+        article{
+            display: grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .'
+            ;
+            height: 100%;
+        }
+        section{
+            border: solid;
+        }
+        aside{
+            background-color: coral;
+            border: solid;
+        }
+        footer{
+            grid-area: f;
+            width: 100%;
+            display: grid;
+            grid-template-areas: 'n1 n2';
+            border: solid;
+            background-color: darkgoldenrod;
+        }
+
+        #sec1{grid-area: s1;}
+        #sec2{grid-area: s2;}
+        #sec3{grid-area: s3;}
+        #aside1{grid-area: a1;}
+        #aside2{grid-area: a2;}
+        #nav1{grid-area: n1;}
+        #nav2{grid-area: n2;}
+
+        @media screen and (max-width: 600px){
+
+            article{
+               
+                grid-template-areas: 
+                's1'
+                's2'
+                's3'
+                'a1'
+                'a2'
+                ;
+               
+            }
+
+            footer{
+           
+                grid-template-areas: 
+                'n1'
+                'n2';
+           
+            }
+            
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>study with anis</h1>
-        </div>
-    
-       <div class="content-wrap">
-           <p>Menu, main, aside everything is here</p>
-       </div>
-    
-       <div class="footer">
-          <p>Footer is here</p>
-       </div>
-    </div>
+
+    <header>
+        <nav>header nav</nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="sec1">section1</section>
+            <section id="sec2">section2</section>
+            <section id="sec3">section3</section>
+
+            <aside id="aside1"> aside 1</aside>
+            <aside id="aside2"> aside 2</aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav id="nav1">Nav1</nav>
+        <nav id="nav2">Nav2</nav>
+    </footer>
+   
+  
 </body>
-</html> 
+</html>

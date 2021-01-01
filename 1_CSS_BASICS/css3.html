@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class and ID selectors</title>
+
+    <style>
+      /*to access a class you have to use dot (.) before the class name*/
+      .title {
+        color: brown;
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .horizontal-style {
+        width: 350px;
+        /* height: 3px;
+            background-color:brown; */
+        border-top: 1px dashed brown;
+      }
+
+      .para-style1 {
+        color: crimson;
+      }
+
+      .para-style2 {
+        font-size: large;
+      }
+
+      #div1 {
+        color: white;
+        padding: 20px;
+        background-color: darkgreen;
+      }
+
+      #div2 p {
+        color: red;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Bangladesh</h1>
+    <hr class="horizontal-style" />
+    <p class="para-style1 para-style2">
+      Tempor labore amet dolores ipsum dolor et. Accusam ut sea no ipsum diam,
+      clita dolor ipsum erat vero ipsum magna.
+    </p>
+
+    <div id="div1">I am div1</div>
+    <div id="div2">
+      <p>I am paragraph inside div2</p>
+    </div>
+  </body>
+</html>

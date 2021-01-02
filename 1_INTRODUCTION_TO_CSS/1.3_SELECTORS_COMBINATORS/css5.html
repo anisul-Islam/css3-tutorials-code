@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseduo - class and pseduo - element</title>
+
+    <!-- 
+        
+        Pseudo class 
+        :hover, :focus, 
+        :first-child, :last-child, 
+        :nth-child(value) here value can be odd, even, 1, 2, 5n, 3n+1
+        :first-of-type, :last-of-type
+    -->
+
+    <style>
+      p:hover {
+        color: brown;
+      }
+
+      .demo p:first-child {
+        background: #000;
+        color: white;
+      }
+      .demo p:last-child {
+        background: green;
+        color: white;
+      }
+
+      /* p::before {
+        content: ">";
+      } */
+
+      input {
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+      input:focus {
+        background: green;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      table {
+        margin-top: 10px;
+        width: 150px;
+        border-collapse: collapse;
+      }
+
+      tr:nth-child(even) {
+        background-color: gray;
+      }
+      tr:nth-child(odd) {
+        background-color: goldenrod;
+      }
+
+      thead tr th {
+        background: green;
+      }
+
+      ul li:nth-child(odd) {
+        color: green;
+      }
+
+      li:last-of-type {
+        font-size: 2rem;
+      }
+
+      .demo::before,
+      .demo::after {
+        margin-top: 10px;
+        content: "";
+        width: 100%;
+        display: table;
+        background: #000;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Ea dolores lorem voluptua labore sit eos, lorem ut voluptua tempor diam
+      diam consetetur. Magna ipsum et diam dolore eirmod. Eos duo ea sadipscing
+      eos rebum. Ut eos sea et invidunt voluptua eos. Sea invidunt nonumy clita
+      et gubergren, invidunt invidunt dolore amet gubergren et, lorem magna et
+      justo nonumy.
+    </p>
+
+    <input type="text" />
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Anis</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Rabeya</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Kalam</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>Hasim</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="demo">
+      <p>this is paragraph 1</p>
+      <p>this is paragraph 2</p>
+      <p>this is paragraph 3</p>
+      <p>this is paragraph 4</p>
+      <p>this is paragraph 5</p>
+    </div>
+
+    <div>
+      <ul>
+        <li>Home1</li>
+        <li>Home2</li>
+        <li>Home3</li>
+        <li>Home4</li>
+        <li>Home5</li>
+      </ul>
+    </div>
+  </body>
+</html>

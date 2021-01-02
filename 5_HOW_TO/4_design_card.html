@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <title>Card Design</title>
+    <style>
+      .card-containers {
+        box-sizing: border-box;
+        display: flex;
+        /* flex-wrap: wrap;
+            flex-direction: row; */
+        flex-flow: row wrap;
+        /* justify-content: space-evenly; */
+        justify-content: center;
+        align-items: center;
+        /* max-width: 80%; */
+        margin: 0 auto;
+        background-color: cadetblue;
+        padding: 20px 0;
+      }
+      .card {
+        width: 300px;
+        box-shadow: 1px 2px 4px black;
+        box-sizing: border-box;
+        margin: 10px;
+      }
+
+      .img-style {
+        width: 100%;
+        display: block;
+      }
+
+      .card-body {
+        padding: 5px;
+        background-color: #761f8c;
+      }
+
+      .card-body .card-title {
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+      }
+
+      .card-body .card-description {
+        text-align: justify;
+        line-height: 1.5;
+        /* letter-spacing: 2px; */
+        color: lightblue;
+      }
+
+      .card:hover {
+        box-shadow: 6px 12px 10px white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-containers">
+      <div class="card">
+        <img
+          class="img-style"
+          src="http://www.studywithanis.com/wp-content/uploads/2018/01/HTML.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="card-title">HTML</div>
+          <div class="card-description">
+            <p>
+              Clita sed amet est ipsum tempor lorem ea nonumy takimata. Sit
+              nonumy no ea invidunt dolores. Et justo sed nonumy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="img-style"
+          src="http://www.studywithanis.com/wp-content/uploads/2018/01/discrete-math.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="card-title">Discrete Math</div>
+          <div class="card-description">
+            <p>
+              Clita sed amet est ipsum tempor lorem ea nonumy takimata. Sit
+              nonumy no ea invidunt dolores. Et justo sed nonumy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="img-style"
+          src="http://www.studywithanis.com/wp-content/uploads/2018/01/C-programming-Cover.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="card-title">C programming</div>
+          <div class="card-description">
+            <p>
+              Clita sed amet est ipsum tempor lorem ea nonumy takimata. Sit
+              nonumy no ea invidunt dolores. Et justo sed nonumy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

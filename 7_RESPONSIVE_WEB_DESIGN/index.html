@@ -9,54 +9,71 @@
       * {
         box-sizing: border-box;
       }
-
-      .row {
-        display: flex;
-        flex-wrap: wrap;
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
       }
 
-      .col {
-        flex: 25%;
-        padding: 5px;
+      [class*="col-"] {
+        float: left;
+        padding: 10px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
       }
 
       @media screen and (max-width: 600px) {
-        .row {
-          flex-direction: column;
+        [class*="col-"] {
+          width: 100%;
         }
       }
     </style>
   </head>
   <body>
-    <div class="row">
-      <div class="col">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          dicta totam autem qui dolorem laudantium voluptatibus animi
-          perferendis aliquam vel.
-        </p>
+    <div class="container">
+      <header style="background: green">header</header>
+      <div class="row">
+        <nav class="col-2">nav</nav>
+        <main class="col-7">Main</main>
+        <aside class="col-3">Aside</aside>
       </div>
-      <div class="col">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          dicta totam autem qui dolorem laudantium voluptatibus animi
-          perferendis aliquam vel.
-        </p>
-      </div>
-      <div class="col">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          dicta totam autem qui dolorem laudantium voluptatibus animi
-          perferendis aliquam vel.
-        </p>
-      </div>
-      <div class="col">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          dicta totam autem qui dolorem laudantium voluptatibus animi
-          perferendis aliquam vel.
-        </p>
-      </div>
+      <footer style="background-color: yellow">Footer</footer>
     </div>
   </body>
 </html>
